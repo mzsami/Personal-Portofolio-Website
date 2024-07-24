@@ -638,7 +638,11 @@ input, select, textarea {
 		}
 
 /* Image */
-
+	.container {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	}
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -722,7 +726,13 @@ input, select, textarea {
 			}
 
 		}
+	.img_sami{
 
+		display: grid;
+		place-items: center;
+		width: 70%;
+		height: 70%;
+	}
 /* List */
 
 	ol {
