@@ -33,6 +33,27 @@
     --shadow:0 8px 24px rgba(2,6,23,.06);
     --shadow-sm:0 2px 8px rgba(2,6,23,.05);
   }
+  .avatar-wrap,
+.hero-avatar-wrap {
+  width: 180px;      /* size */
+  height: 180px;
+  border-radius: 50%; /* makes it a circle */
+  overflow: hidden;   /* crop image inside circle */
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 0;
+  background: transparent;
+}
+
+.avatar-img,
+.hero-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* ensures it fills circle */
+  border-radius: 50%;  /* keep circle shape */
+  display: block;
+}
+
 
   *{box-sizing:border-box}
   html,body{height:100%}
